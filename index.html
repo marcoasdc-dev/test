@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecretWave — Ganhe em Dólar copiando e colando vídeos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cursor-glow"></div>
+  <div class="background-waves"></div>
+  <canvas id="waveCanvas" class="wave-canvas" aria-hidden="true"></canvas>
+  <div class="scroll-progress" aria-hidden="true">
+    <span class="scroll-progress-bar"></span>
+  </div>
+
+  <nav class="floating-nav" aria-label="Menu principal">
+    <div class="nav-inner">
+      <div class="logo">
+        <span class="wave-icon" aria-hidden="true"></span>
+        <span class="logo-text">SecretWave</span>
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#como-funciona">Como Funciona</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#metodo">Método</a></li>
+        <li><a href="#oferta">Oferta</a></li>
+        <li><a href="#escassez">Escassez</a></li>
+        <li><a href="#garantia">Garantia</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="cta-link magnetic" href="#comprar">Comprar</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <span class="wave-icon" aria-hidden="true"></span>
+      <span>SecretWave</span>
+      <button class="menu-close" aria-label="Fechar menu">×</button>
+    </div>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#como-funciona">Como Funciona</a></li>
+      <li><a href="#resultados">Resultados</a></li>
+      <li><a href="#metodo">Método</a></li>
+      <li><a href="#oferta">Oferta</a></li>
+      <li><a href="#escassez">Escassez</a></li>
+      <li><a href="#garantia">Garantia</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a class="cta-link magnetic" href="#comprar">Comprar</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <section id="inicio" class="hero section">
+      <div class="parallax-layer" data-parallax="0.12">
+        <div class="hero-content" data-animate>
+          <h1>Você Pode Ganhar Em Dólar Essa Semana Só Copiando e Colando o Nosso Método.</h1>
+          <p class="subheadline">Sem saber editar. Sem aparecer.<br>É só seguir o passo a passo e ver depósitos em dólar ainda essa semana.</p>
+          <p class="mini-text">Você não precisa ser editor.<br>Só precisa copiar, colar e surfar essa onda antes que ela feche.</p>
+          <a id="comprar" href="#escassez" class="btn primary-btn ripple magnetic" data-animate>[COMEÇAR AGORA — ÚLTIMAS VAGAS 🌊]</a>
+        </div>
+      </div>
+      <div class="parallax-layer" data-parallax="-0.08">
+        <div class="hero-visual" aria-hidden="true" data-animate>
+          <div class="iphone-mockup">
+            <div class="iphone-inner">
+              <div class="iphone-glow"></div>
+              <div class="iphone-screen">
+                <div class="notification-stack" id="notificationStack"></div>
+              </div>
+            </div>
+          </div>
+          <div class="light-particles"></div>
+        </div>
+      </div>
+      <div class="hero-floats" aria-hidden="true">
+        <div class="float-item" data-float-depth="0.28">
+          <div class="float-card">
+            <span class="float-icon">🌊</span>
+            <span class="float-text">Fluxo contínuo em dólar</span>
+          </div>
+        </div>
+        <div class="float-item" data-float-depth="0.18">
+          <div class="float-card">
+            <span class="float-icon">⚡</span>
+            <span class="float-text">Copiar, colar e receber</span>
+          </div>
+        </div>
+        <div class="float-item" data-float-depth="0.32">
+          <div class="float-card">
+            <span class="float-icon">💵</span>
+            <span class="float-text">+$200 em 72h</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="discovery section" id="descoberta" data-parallax="0.05">
+      <div class="section-header" data-animate>
+        <h2>Tem Um Site Gringo Pagando Em Dólar Por Vídeos Simples — E Quase Ninguém No Brasil Sabe.</h2>
+      </div>
+      <div class="discovery-content glass" data-animate>
+        <p>Enquanto a maioria luta por visualizações e ganha centavos,<br>uma plataforma estrangeira paga <strong>em dólar</strong> por vídeos simples de 30 segundos.</p>
+        <p>E o melhor: você não precisa editar, aparecer ou investir.</p>
+        <p>O <strong>SecretWave</strong> ensina como <strong>copiar e colar vídeos prontos</strong><br>e ativar os pagamentos em dólar na mesma semana.</p>
+      </div>
+      <div class="card-grid" data-animate>
+        <article class="glass card magnetic" data-magnetic-strength="0.12"><span>📱</span>Encontre vídeos prontos e virais.</article>
+        <article class="glass card magnetic" data-magnetic-strength="0.12"><span>⚙️</span>Use ferramentas simples e automáticas.</article>
+        <article class="glass card magnetic" data-magnetic-strength="0.12"><span>💵</span>Receba em dólar, direto e rápido.</article>
+      </div>
+    </section>
+
+    <section class="offer section" id="oferta" data-parallax="-0.04">
+      <div class="offer-header section-header" data-animate>
+        <h2>O SecretWave entrega tudo pronto pra você começar hoje.</h2>
+        <p>Receba o método completo, suporte rápido e modelos prontos pra copiar e colar com confiança.</p>
+      </div>
+      <div class="offer-grid" data-animate>
+        <article class="glass offer-card magnetic" data-magnetic-strength="0.1">
+          <h3>O que você leva:</h3>
+          <ul>
+            <li><span>🎬</span> Biblioteca de vídeos prontos e atualizada toda semana.</li>
+            <li><span>🧠</span> Aulas passo a passo com checklists aplicáveis.</li>
+            <li><span>⚡</span> Ferramentas automáticas para copiar, repostar e lucrar.</li>
+            <li><span>🌍</span> Guia de recebimento em dólar simplificado.</li>
+          </ul>
+        </article>
+        <article class="glass offer-highlight magnetic" data-magnetic-strength="0.1" data-magnetic-limit="14">
+          <div class="price-tag">
+            <span class="price">R$89</span>
+            <span class="pill">acesso vitalício</span>
+          </div>
+          <p>Entre agora e desbloqueie bônus secretos: scripts de legendas, calendário de postagem e templates de descrição que fazem você receber mais rápido.</p>
+          <a href="#escassez" class="btn primary-btn ripple magnetic">Garantir minha vaga agora</a>
+          <p class="secure-note">Pagamento 100% seguro. Receba acesso imediato após confirmar.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="problem section" id="problema" data-parallax="0.03">
+      <div class="section-content glass" data-animate>
+        <h2>Você Ainda Acha Que Precisa Ser Famoso Pra Ganhar Dinheiro Online?</h2>
+        <p>Você não precisa de seguidores, nem viralizar.</p>
+        <p>O que falta é o método certo.</p>
+        <p>E o <strong>SecretWave</strong> mostra exatamente o caminho<br>pra qualquer pessoa começar do zero e lucrar em dólar.</p>
+      </div>
+    </section>
+
+    <section class="wave-process section" id="como-funciona" data-parallax="-0.05">
+      <div class="section-header" data-animate>
+        <h2>Você Vai Aprender Um Processo Que Qualquer Pessoa Consegue Aplicar.</h2>
+        <p>O SecretWave é um método prático e direto:<br>você literalmente copia o modelo, cola nas ferramentas certas<br>e começa a receber em dólar.</p>
+      </div>
+      <div class="card-grid" data-animate>
+        <article class="glass card tilt"><span>🔍</span>Encontrar vídeos prontos que já viralizam.</article>
+        <article class="glass card tilt"><span>⚙️</span>Copiar e colar o método completo.</article>
+        <article class="glass card tilt"><span>💵</span>Ativar os pagamentos em dólar.</article>
+      </div>
+    </section>
+
+    <section class="results section" id="resultados" data-parallax="0.04">
+      <div class="section-header" data-animate>
+        <h2>Gente Comum Tá Fazendo Dinheiro Em Dólar Com Esse Mesmo Método.</h2>
+      </div>
+      <div class="carousel" data-animate>
+        <div class="carousel-track">
+          <article class="glass testimonial">“Nunca editei nada e fiz $200 em 5 dias.”</article>
+          <article class="glass testimonial">“Achei que era impossível… recuperei o valor do curso em 3 dias.”</article>
+          <article class="glass testimonial">“Copiei e colei o método e já recebi meu primeiro pagamento.”</article>
+          <article class="glass testimonial">“Meu primeiro depósito caiu em 72 horas usando o SecretWave.”</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="method section" id="metodo" data-parallax="-0.03">
+      <div class="section-header" data-animate>
+        <h2>Tudo o Que Você Precisa Pra Começar Do Zero e Lucrar Em Dólar.</h2>
+      </div>
+      <div class="method-grid" data-animate>
+        <article class="glass card"><span>🔍</span>Como achar vídeos prontos e virais.</article>
+        <article class="glass card"><span>⚙️</span>Como copiar e colar o método certo.</article>
+        <article class="glass card"><span>💵</span>Como postar da forma certa pra receber em dólar.</article>
+        <article class="glass card"><span>🚀</span>Como multiplicar os ganhos semanais.</article>
+        <article class="glass card"><span>🎁</span>Ferramentas e scripts prontos pra acelerar seus resultados.</article>
+      </div>
+      <div class="section-footer glass" data-animate>
+        <p>Você não precisa entender de vídeo.<br>Só precisa seguir o passo a passo —<br>o mesmo que tá gerando lucros em dólar toda semana pros nossos alunos.</p>
+      </div>
+    </section>
+
+    <section class="scarcity section" id="escassez" data-parallax="0.05">
+      <div class="section-content glass" data-animate>
+        <h2>Essa É a Segunda e Última Abertura do SecretWave.</h2>
+        <p>O método é novo e poucos conhecem.</p>
+        <p>Pra manter o mercado limpo e os alunos lucrando,<br>o SecretWave será <strong>fechado permanentemente</strong> após esta abertura.</p>
+        <p>Quem entrar agora vai surfar em água limpa.</p>
+        <p>Quem deixar pra depois vai ver a onda passar.</p>
+        <a class="btn primary-btn ripple magnetic" href="#comprar">[ENTRAR AGORA — ÚLTIMA ABERTURA 🚀]</a>
+      </div>
+    </section>
+
+    <section class="guarantee section" id="garantia" data-parallax="-0.04">
+      <div class="section-content glass" data-animate>
+        <h2>Testa Sem Medo. Se Não Gostar, Devolvemos o Dinheiro.</h2>
+        <p>Você tem 7 dias pra ver o curso, aplicar e testar.</p>
+        <p>Se não gostar, a gente devolve tudo — sem perguntas.</p>
+        <p>Porque quem aplica, ganha.</p>
+        <div class="guarantee-badge">7 Dias de Garantia 💯</div>
+      </div>
+    </section>
+
+    <section class="faq section" id="faq" data-parallax="0.04">
+      <div class="section-header" data-animate>
+        <h2>Tem Dúvidas? Aqui Vai o Que Todo Mundo Pergunta 👇</h2>
+      </div>
+      <div class="faq-list" data-animate>
+        <article class="faq-item glass">
+          <button class="faq-question" aria-expanded="false">
+            <span>Preciso saber editar vídeos?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Não. É literalmente copiar e colar.</div>
+        </article>
+        <article class="faq-item glass">
+          <button class="faq-question" aria-expanded="false">
+            <span>Dá pra começar com o celular?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Sim. Só precisa de um celular e internet.</div>
+        </article>
+        <article class="faq-item glass">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quando posso ver resultados?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Na mesma semana. Alguns alunos em 3 dias.</div>
+        </article>
+        <article class="faq-item glass">
+          <button class="faq-question" aria-expanded="false">
+            <span>Preciso aparecer nos vídeos?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Não. Método 100% sem rosto.</div>
+        </article>
+        <article class="faq-item glass">
+          <button class="faq-question" aria-expanded="false">
+            <span>Esse site que paga é real?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Sim, é global e paga em dólar.</div>
+        </article>
+        <article class="faq-item glass">
+          <button class="faq-question" aria-expanded="false">
+            <span>Por que custa R$89?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Pra manter o acesso restrito e o mercado limpo.</div>
+        </article>
+        <article class="faq-item glass">
+          <button class="faq-question" aria-expanded="false">
+            <span>Essa é a última vez mesmo?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Sim. Após essa abertura, o acesso será fechado.</div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="wave-icon" aria-hidden="true"></span>
+      <p>SecretWave™ — A Onda Secreta dos Lucros em Dólar.</p>
+      <div class="footer-links">
+        <a href="#">Termos</a>
+        <a href="#">Política</a>
+        <a href="#">Suporte</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
